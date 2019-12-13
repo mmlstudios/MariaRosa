@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Maria Rosa - Autentisk italiensk</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="nav-wrapper">
+<div id="nav-div">
+  <a href="#heroimg">
+<img src="images/logo.svg" alt="maria rosa - italiensk madlavning"  class="name" onclick="frontPage()">
+  </a>
+<div class="burger-box">
+    <div id="nav-icon1" class="closed">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  </div>
+<div class="bookbord" onclick="bookingPage()"><p>BOOK BORD</p></div>
+</div>
+</div>
+<div id="menu" class="menu-closed">
+  <ul>
+    <li class="menuburger" onclick="menuPage()">• Menu</li>
+    <li class="bookburger" onclick="bookingPage()">• Book bord</li>
+    <li class="galleriburger" onclick="galleriPage()">• Galleri</li>
+    <li class="omburger" onclick="omPage()">• Om os</li>
+  </ul>
+</div>
+
+  </header>
+
+  <main>
+    <div id="frontpage-div" class="front">
+      <div id="heroimg" class="heroimg-bgg">
+      <h2 class="herotext">Autentisk <br> italiensk <br> madlavning</h2>
+      <div class="adresse">
+        <h3>Info:</h3>
+        <br>
+        <p>Adelgade 87</p>
+        <p>8669, Skanderborg</p>
+        <p>tlf: 25 63 87 87</p>
+      </div>
+
+      <div class="åbningstider"><h3>Åbningstider:</h3>
+        <br>
+        <div class="dage">
+          <p>Man-Tor:</p>
+          <p>Fredag:</p>
+          <p>Lørdag:</p>
+          <p class="last">Søndag:</p>
+        </div>
+      </div>
+      <div class="tider">
+        <p>16:00-21:00</p>
+        <p>16:00-22:00</p>
+        <p>12:00-22:00</p>
+        <p class="last">12:00-21:00</p>
+      </div>
+      <div class="some">
+        <h3>Social Media:</h3>
+        <a href="https://www.facebook.com/MARIAROSA.RESTAURANT/"><div class="fb"><img src="images/fb.png" alt="facebook"></div></a>
+        <a href=""><div class="ig"><img src="images/ig.svg" alt="instagram"></div></a>
+      </div>
+    </div>
+    </div>
+
+    <div id="menupage-div" class="menupage-closed">
+            <div class="topbox"><p>fill</p></div>
+            <h3 id="brunch">Brunch:</h3>
+              <br>
+            <div class="maddiv">
+            <p class="madnavn">Brunch menu</p>
+            <p class="beskrivelse">Laks eller kyllinge salat. 2 slags af italiensk pålæg, oste, æg med bacon, pankage, frugt, cannolo alla siciliana. Yoghurt med honing og museli. Brød og smør</p>
+            <p class="pris">99,00 kr.</p>
+            </div>
+
+            <div class="flur">
+              <img src="images/flurish.png" alt="">
+            </div>
+
+            <h3 id="sandwich">Sandwich:</h3>
+              <br>
+            <div class="maddiv">
+            <p class="madnavn">Vælg brød</p>
+            <p class="beskrivelse">Italiensk foccacia med rosmarin, Mørkt brød</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Vegetar</p>
+            <p class="beskrivelse">Salat, tomater, agurk, løg, grillede grøntsager, asiago ost. Og hejmmelavet basilikum pesto</p>
+            <p class="pris">55,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Kylling</p>
+            <p class="beskrivelse">Salat, kylling, bacon, tomater, løg, agurk og hjemmelavet caesar dressing</p>
+            <p class="pris">55,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Røget laks</p>
+            <p class="beskrivelse">Salat, rucola, laks, løg, grillet courgette, semi dried tomater, oliven,og hejmmelavet basilikum pesto</p>
+            <p class="pris">55,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Italiensk</p>
+            <p class="beskrivelse">Pistacien mortadella / porchetta / parma. Salat, rucola, grillet artichok, tomater, tris pecorino ost og hejmmelavet rød pesto</p>
+            <p class="pris">55,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Coppa</p>
+            <p class="beskrivelse">Coppa med provola ost, baby spinat, cherry tomater, hejmmelavet basilikum pesto</p>
+            <p class="pris">60,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Schiacciata</p>
+            <p class="beskrivelse">Chili salami, smeltet mozzarella ost, peperfrugt, løg, oliven</p>
+            <p class="pris">55,00 kr.</p>
+            </div>
+
+            <div class="flur">
+              <img src="images/flurish.png" alt="">
+            </div>
+
+            <h2>Aften:</h2>
+            <h3 id="antipasti">Antipasti</h3>
+            <br>
+            <div class="maddiv">
+            <p class="madnavn">Affettati misti</p>
+            <p class="beskrivelse">Udvalg af forskellig italienske specialiteter skinke, pølse, ost og tilbehør. Serveret med brød</p>
+            <p class="pris">109,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Bruschetta</p>
+            <p class="beskrivelse">Hvidløg og olivenolie ristet brød Tomat, løg, hvidløg, kapers, oliven, peberfrugter, oregano. Basilikum, ricotta, grillede grøntsager, Karameliseret løg og champignon</p>
+            <p class="pris">55,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Bue</p>
+            <p class="beskrivelse">Carpaccio (hjemmelavede røget okse) , rucola, pinjekerner, Fior di kapers, grana padano ost, blåbær sauce</p>
+            <p class="pris">79,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Baccalá manteccato</p>
+            <p class="beskrivelse">Det er tørret torsk, der er flået, kogt i mælk og bogstaveligt talt slået til en pulp (blød masse) olivenolie hældes på al filo og bliver krydret med lidt salt og frisk peber. Serveret med lilla kartofler quenelle og sprød polenta</p>
+            <p class="pris">109,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Burrata</p>
+            <p class="beskrivelse">Italiensk burrata ost, tomat og basilikum pesto, pistacie. Ekstra jomfru olivenolie udvalgt og koldpresset</p>
+            <p class="pris">69,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Bresaola</p>
+            <p class="beskrivelse">Bresaola med rucolasalat, cherrytomater, ricotta, mandler, balsamisk glasur. Serveret i sprød parmesan kurv</p>
+            <p class="pris">79,00 kr.</p>
+            </div>
+
+            <h3 id="pastas">Pasta</h3>
+            <br>
+            <div class="maddiv">
+            <p class="madnavn">Lasagna</p>
+            <p class="beskrivelse">Frisk pasta med okse ragú , bechamelsauce og parmesan. Serveret med ostecreme</p>
+            <p class="pris">89,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Carbonara</p>
+            <p class="beskrivelse">Spaghetti, sauteret med italiensk bacon bundet med æggeblomme og ost</p>
+            <p class="pris">69,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Garganelli</p>
+            <p class="beskrivelse">Æggepasta, speck, valnødder, pærer og gorgonzola</p>
+            <p class="pris">95,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Vegetarisk pasta</p>
+            <p class="beskrivelse">Kold pasta, frisk grøntsager, hjemmelavet basilikum pesto</p>
+            <p class="pris">69,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Dagen specialitet</p>
+            <p class="beskrivelse">Spørg tjenerne</p>
+            </div>
+
+            <h3 id="suppe">Suppe</h3>
+            <br>
+            <div class="maddiv">
+            <p class="madnavn">Sæsonens suppe</p>
+            <p class="beskrivelse">Spørg tjenerne</p>
+            <p class="pris">55,00 kr.</p>
+            </div>
+
+            <h3 id="insalata">Insalata</h3>
+            <br>
+            <div class="maddiv">
+            <p class="madnavn">Romagnola</p>
+            <p class="beskrivelse">Bagt sprød piadina, iceberg salat, okse ragú, majs, bønner, peberfrugter, agurk, løg, cherrytomater, oliven og urte yoghurt</p>
+            <p class="pris">69,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Laks salat</p>
+            <p class="beskrivelse">Salat mix med rucola, cherry tomater, løg, kartofler, oliven, dild og citron emulsion</p>
+            <p class="pris">69,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Kyllingesalat</p>
+            <p class="beskrivelse">Salat mix, byg, ananas, gulerødder, tørret frugt</p>
+            <p class="pris">69,00 kr.</p>
+            </div>
+
+            <h3 id="secondi">Secondi</h3>
+            <br>
+            <div class="maddiv">
+            <p class="madnavn">Spezzatino della nonna</p>
+            <p class="beskrivelse">Oksekød gryderet kogt i rødvin og krydderier serveret med bagt kartofler</p>
+            <p class="pris">179,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Pollo alla valdostana</p>
+            <p class="beskrivelse">Ristet kyllingebryst i ovn med skinke, champignon og smeltet ost</p>
+            <p class="pris">150,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Baccala alla vicentina</p>
+            <p class="beskrivelse">Det er tørret torsk, som bliver pundes. Derefter gennemblødt i tre dage for at blødgøre, herefter rengøres den. Den bliver dækket af mælk og olivenolie og koges over en meget langsom flamme hvor løg tilføjes - serveret med en gul polenta og kartofler.</p>
+            <p class="pris">199,00 kr.</p>
+            </div>
+
+            <h3 id="dolci">Dolci</h3>
+            <br>
+            <div class="maddiv">
+            <p class="madnavn">Tortino al cioccolato</p>
+            <p class="beskrivelse">Chokoladekage 70% mørk med smeltende hjerte jordbær coulis og vanilleis</p>
+            <p class="pris">60,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Tiramisu</p>
+            <p class="beskrivelse">Savoiardi dybde i kaffe og marsala, mascarpone creme, chokolade</p>
+            <p class="pris">50,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Ananas flambé</p>
+            <p class="beskrivelse">Fresh ananas flambé med grand marnier</p>
+            <p class="pris">50,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Cannoli alla siciliana</p>
+            <p class="beskrivelse">Fyldt med ricotta creme, kandiseret frugt og pistacie</p>
+            <p class="pris">50,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Fantasia di formaggi</p>
+            <p class="beskrivelse">Udvalg af lækker italiensk oste, tomat conffettura, honning og tilbehør</p>
+            <p class="pris">69,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Salami al cioccolato</p>
+            <p class="beskrivelse">Mørk chokolade og kiks i salami form serveret med mascarpone og orange creme</p>
+            <p class="pris">40,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Torta della casa</p>
+            <p class="beskrivelse">Ricotta ost og pærer kage</p>
+            <p class="pris">40,00 kr.</p>
+            </div>
+
+            <h3 id="pizza">Pizza</h3>
+            <br>
+            <div class="maddiv">
+            <p class="madnavn">Margherita</p>
+            <p class="beskrivelse">Tomatsauce, mozzarella ost, og basilikum pesto</p>
+            <p class="pris">55,00 - 85,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Capricciosa</p>
+            <p class="beskrivelse">Tomatsauce, mozzarella ost, stegt skinke, artiskokker, champignon og oliven</p>
+            <p class="pris">75,00 - 120,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Dall’orto</p>
+            <p class="beskrivelse">Tomatsauce, mozzarella ost, squash, aubergine, peberfrugt og champignon</p>
+            <p class="pris">70,00 - 105,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Parma</p>
+            <p class="beskrivelse">Tomatsauce, mozzarella ost, Parma lufttørret skinke, cherrytomater, parmesan og rucola</p>
+            <p class="pris">75,00 - 120,00 kr.</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Golfo</p>
+            <p class="beskrivelse">Tomatsauce, mozzarella ost, rejer, tun, rødløg, pistacienødder</p>
+            <p class="pris">75,00 - 120,00 kr</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Garda</p>
+            <p class="beskrivelse">Tomatsauce, mozzarella ost, champignon, karameliseret løg, porchetta</p>
+            <p class="pris">75,00 - 120,00 kr</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Merano</p>
+            <p class="beskrivelse">Tomatsauce, mozzarella ost, gorgonzola, champignon, speck og hvid tryffelolie</p>
+            <p class="pris">75,00 - 120,00 kr</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Rosa</p>
+            <p class="beskrivelse">Tomatsauce, mozzarella ost, karameliseret løg, kylling, kartofler</p>
+            <p class="pris">75,00 - 120,00 kr</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Maria (bianca)</p>
+            <p class="beskrivelse">Mozzarella ost, ricotta, aubergine, cherrytomater, trøffel pecorino ost</p>
+            <p class="pris">70,00 - 105,00 kr</p>
+            </div>
+
+            <div class="maddiv">
+            <p class="madnavn">Bresaola</p>
+            <p class="beskrivelse">Tomatsauce, mozzarella, semi dried tomater, baby spinat, bresaola, valnød, parmesan</p>
+            <p class="pris">75,00 - 120,00 kr</p>
+            </div>
+            <div class="flur">
+              <img src="images/flurish.png" alt="">
+            </div>
+        </div>
+
+
+    <div id="bookingpage-div" class="bookingpage-closed">
+      <div class="topbox"><p>fill</p></div>
+      <h2>Booking</h2>
+
+      <p class="bookingtext">Hos Maria Rosa byder vi alle velkomne, udfyld formularen eller kontakt os på 25 63 87 87, og lad os vide hvor mange og hvornår i kommer.</p>
+
+      <div>
+        <img src="images/bookingform.jpg" alt="">
+      </div>
+
+    </div>
+
+    <div id="galleripage-div" class="galleripage-closed">>
+
+
+
+    </div>
+
+    <div id="ompage-div" class="ompage-closed">
+      <p>At besøge Maria Rosa, skal give en mulighed for at komme væk fra hverdagens ræs og nyde en rolig atmosfære og et lækkert måltid. Alt sammen uden at brænde huld i pengepungen.</p>
+
+
+    </div>
+
+
+  </main>
+
+  <footer id="footerid">
+    <div class="footer-div">
+<p>test</p>
+
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

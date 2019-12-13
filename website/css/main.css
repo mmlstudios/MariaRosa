@@ -1,0 +1,383 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  background: black;
+}
+
+main {z-index: 2;
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: black;
+  color: white;
+  position: relative;
+}
+
+.nav-wrapper {z-index: 3;
+background: rgb(0, 0, 0, 0);
+  position: fixed;
+  width: 100%;
+  height: 15vh;
+top: 0px;}
+
+.nav-wrapper-alt{
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  z-index: 3;
+  background: rgb(0, 0, 0, 0.5);
+  transition: all 0.4s;
+}
+
+#menu {transition: 0.2s;}
+
+.menu-closed {position: fixed;opacity: 1; width: 200vh; height: 0vh ;background: white; top: 15vh; z-index: 4;
+left: 0;
+font-size: 0%;
+  transition: 0.2s;
+}
+
+.menu-closed ul {
+  right: 0;
+  padding-left: 10%;
+  padding-top: 5%;
+  transition: 0.0s;
+}
+
+.menu-visible {position: fixed;
+  opacity: 1;
+  width: 200vh;
+  height: 85vh;
+  background: rgb(255, 255, 255, 0.9);
+  left: 0;
+  top: 15vh;
+  z-index: 4;
+  transition:  0.2s;
+}
+.menu-visible ul {
+  font-size: 10vh;
+  font-weight: bold;
+  color: black;
+  padding-left: 10%;
+  padding-top: 5%;
+  margin-right: 40%;
+  transition: 0.2s;
+}
+
+.menu-visible li {
+  margin-bottom: 6%;
+  color: rgb(51, 51, 51);
+  width: 80%;
+    cursor: pointer;
+}
+
+.menu-visible li:hover {
+  cursor: pointer;
+  transition: 0.2s;
+  color: black;
+}
+
+.menu-visible li:before {
+      display: block;
+      content: "";
+      height: 3px;
+      width: 0;
+      background: rgb(51, 51, 51);
+      transition: 0.3s ease-in-out;
+}
+
+.menu-visible li:hover:before {
+width: 65%;
+background: black;
+}
+
+
+
+#nav-div {
+height: 10vh;
+}
+
+.name {color: white; text-align: center;
+  margin-top: 4vh;
+width: 25%;
+margin-left: 37.5%;
+opacity: 0.90;
+ cursor: pointer}
+
+.name-alt {color: white; text-align: center;
+  margin-top: 0.80vh;
+width: 20%;
+margin-left: 40%;
+transition: all 0.4s;
+ cursor: pointer}
+
+.bookbord {width: 40px; height: 40px; text-align: center; color: rgb(255, 255, 255, 0.80); font-weight: 600;
+  position: fixed; top: 5%; right: 35px; transition: 0.4s; cursor: pointer}
+
+.bookbord-alt {width: 40px; height: 40px; text-align: center; color: rgb(255, 255, 255, 0.80); font-weight: 600;
+  position: fixed; top: 3%; right: 35px; transition: 0.4s; cursor: pointer}
+
+.bookbord:hover {cursor: pointer;color: rgb(255, 255, 255, 1); cursor: pointer}
+
+.bookbord-alt:hover {cursor: pointer;color: rgb(255, 255, 255, 1); cursor: pointer}
+
+.front {display: inherit;}
+
+.front-closed {display: none;}
+
+#heroimg {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.95),
+    rgba(255, 211, 125, 0.05)),
+    url(../topimg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.herotext {
+transform: translate(66vh, -7vh);
+font-size: 3.5em;
+font-weight:600;
+text-align: center;
+line-height: 1.2;
+font-family: "Apple Chancery";
+letter-spacing: 1vh;
+}
+
+
+.heroimg-bgg {
+color: rgba(255, 255, 255);
+transition: 0.7s;
+}
+
+.heroimg-bgg-alt {
+color: rgba(255, 255, 255, 0.01);
+transition: 0.7s;
+}
+
+.adresse {transform: translate(-50vh,32vh);font-family: "PT serif"; }
+
+.adresse h3 {font-weight: bold; font-size: 1.5em;}
+
+.adresse p {font-size: 1em;
+margin-bottom: 10%;}
+
+.åbningstider {transform: translate(0vh,32vh);font-family: "PT serif"; }
+
+.åbningstider h3 {font-weight: bold; font-size: 1.5em;}
+
+.åbningstider p {font-size: 1em;
+margin-bottom: 5%;}
+
+.tider{transform: translate(-1vh,35vh);font-family: "PT serif";}
+
+.tider p {
+margin-bottom: 10%;}
+
+.last {margin-bottom: 0%;}
+
+.some {transform: translate(40vh,33vh); font-family: "PT serif"; }
+
+.some h3 {font-weight: bold; font-size: 1.5em; margin-bottom: 3%;}
+
+.fb {width: 10%;transform: translate(-2vh,15%);}
+
+.fb img {width: 100%;}
+
+.fb:hover {cursor: pointer}
+
+.ig {width: 10%; transform: translate(10vh, -85%);}
+
+.ig img {width: 100%;}
+
+.ig:hover {cursor: pointer}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+footer {
+  z-index: 2;
+  display: none;
+width: 100%;
+height: auto;
+font-family: Gotham;
+background-color: rgb(229, 189, 142);
+color: white;
+position: relative;
+}
+
+.footer-div {
+height: 10vh;
+background: white;
+
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+.burger-box {width: 40px; height: 40px;
+  position: fixed; top: 4.2%; left: 25px; transition: 0.4s;}
+
+  .burger-box-alt {width: 40px; height: 40px;
+    position: fixed; top: 2.2%; left: 25px;  transition: 0.4s;}
+
+
+#nav-icon1 {
+  width: 100%;
+  height: 90%;
+  position: relative;
+  margin: 1%;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span{
+  display: block;
+  position: absolute;
+  height: 11%;
+  width: 100%;
+  background: rgb(255, 255, 255, 0.80);
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+#nav-icon1 span:hover{background: rgb(255, 255, 255, 1)}
+
+#nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 15px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 30px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.topbox {width: 200vh; height: 20vh; background: rgb(20, 20, 20); color: rgb(20, 20, 20);}
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+#menupage-div {width: 100%}
+
+.menupage-open {display: inherit; width: 200vh; height: auto; background: white; color: rgb(38, 38, 38)}
+
+.menupage-closed {display: none;}
+
+.flur {width: 100%; height: 10vh;}
+
+.flur img {width: 100%; height: 10vh;}
+
+#menupage-div h2 {font-size: 3em; font-weight: bold; padding-top: 2%; margin-left: 2%;width: 80%; text-align: left; float: left;}
+
+#menupage-div h3 {font-size: 2.5em; font-weight: bold; padding-top: 2.5%; margin-left: 2%;width: 100%; text-align: left; float: left; transform: translateY(17%); padding-bottom: 4%;}
+
+
+.maddiv {width: 100%; height: auto; }
+
+.madnavn {width: 92.5%; font-size: 2em; text-align: left; padding-left: 0%; margin-left: 7.5%; margin-top: 7%;}
+
+.beskrivelse {width: 40%; font-size: 1em; text-align: left; padding-left: 0%; margin-left: 8.5%;}
+
+.pris {width: 40%; font-size: 1.5em; text-align: left; padding-left: 0%; margin-left: 8.5%; transform: translate(105%, -100%);}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+#bookingpage-div {}
+
+.bookingpage-open {display: block; width: 200vh; height: auto; background: white; padding-bottom: 2vh;}
+
+.bookingpage-closed {display: none;}
+
+#bookingpage-div h2 {width: 180vh; margin-left: 20vh; text-align: left; color: rgb(38, 38, 38); font-size: 3em; font-weight: bold; margin-top: 2%; margin-bottom: 1%;}
+
+.bookingtext {width: 90vh; margin-left: 20vh; text-align: left; color: rgb(38, 38, 38); font-size: 1.5em; margin-top: 2%; margin-bottom: 1%;}
+
+#bookingpage-div img {width: 30%; margin-left: 35%;}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+#galleripage-div {}
+
+.galleripage-open {display: block; width: 100vh; height: 100vh; background: orange; box-sizing: border-box;}
+
+.galleripage-closed {display: none;}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  padding: 0 6px;
+  width: 24.99999%;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+#ompage-div {}
+
+.ompage-open {display: block; width: 100vh; height: 100vh; background: orange;}
+
+.ompage-closed {display: none;}
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
